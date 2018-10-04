@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cube</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+        .cube_container{
+            position:absolute;
+            width:400px;
+            height:300px;
+            top:50%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .cube{
+            width: 80px;
+            height: 80px;
+            border: 1px solid gray;
+            -webkit-transform-origin: 0 0;
+            transform-origin: 0 0 ;
+        }
+        .top1{
+            position: absolute;
+            background: linear-gradient(to bottom, rgb(230, 250, 255) 0%, rgb(77, 219, 255) 100% ) ;
+            -webkit-transform: rotate(210deg) skew(-30deg) scaleY(0.864);
+            transform: rotate(210deg) skew(-30deg) scaleY(0.864);
+        }
+        .front1{
+            position: absolute;
+            background: linear-gradient(to bottom, rgb(230, 250, 255) 0%, rgb(77, 219, 255) 100% ) ;
+            transform: rotate(-30deg) skew(-30deg) scaleY(0.864);
+        }
+        .side1{
+            position: absolute;
+            background: linear-gradient(to bottom, rgb(230, 250, 255) 0%, rgb(77, 219, 255) 100% ) ;
+            transform: rotate(90deg) skew(-30deg) scaleY(0.864);
+        }
+        .top2{
+            position: absolute;
+            left: 140px;
+            background:linear-gradient(to bottom,rgb(230, 250, 255) 0%, rgb(77, 219, 255) 100% );
+            transform: rotate(210deg)skew(-30deg) scaleY(0.864);
+        }
+        .front2{
+            position: absolute;
+            left: 140px;
+            background:linear-gradient(to bottom,rgb(230, 250, 255) 0%, rgb(77, 219, 255) 100% );
+            transform: rotate(-30deg) skew(-30deg) scaleY(0.846);
+        }
+        .side2{
+            position: absolute;
+            left: 140px;
+            background:linear-gradient(to bottom,rgb(230, 250, 255) 0%, rgb(77, 219, 255) 100% );
+            transform: rotate(90deg) skew(-30deg) scaleY(0.846);
+        }
+        .top3{
+            position: absolute;
+            left: 280px;
+            background: linear-gradient(to bottom,rgb(230, 250, 255) 0%, rgb(77, 219, 255) 100% );
+            transform: rotate(210deg) skew(-30deg) scaleY(0.846);
+        }
+        .front3{
+            position: absolute;
+            left: 280px;
+            background: linear-gradient(to bottom,rgb(230, 250, 255) 0%, rgb(77, 219, 255) 100% );
+            transform: rotate(-30deg) skew(-30deg) scaleY(0.846);
+        }
+        .side3{
+            position: absolute;
+            left: 280px;
+            background: linear-gradient(to bottom,rgb(230, 250, 255) 0%, rgb(77, 219, 255) 100% );
+            transform: rotate(90deg) skew(-30deg) scaleY(0.846);
+        }
+    </style>
+</head>
+<body> 
+    <div class="cube_container">
+        <div class="cube  top1"></div>
+        <div class="cube  front1"></div>
+        <div class="cube  side1"></div>
+        <div class="cube  top2"></div>
+        <div class="cube  front2"></div>
+        <div class="cube  side2"></div>
+        <div class="cube  top3"></div>
+        <div class="cube  front3"></div>
+        <div class="cube  side3"></div>
+    </div>
+</body>
+</html>
